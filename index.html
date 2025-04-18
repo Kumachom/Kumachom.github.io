@@ -1,47 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>水泳メニュー作成アプリ</title>
-  <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <title>水泳のメニュー作成アプリ</title>
+    <link rel="stylesheet" herf="index.css" />
 </head>
 
 
-
 <body>
-  <h1>水泳メニューを作ってみよう！</h1>
-  <!-- 全体のレイアウトを左右に分ける -->
-  <div class="container">
-    <!-- 左側：フォーム入力 -->
-    <div class="form-box">
-      <label for="category">今日の練習メニュー</label>
-      <select id="category">
-        <option value="ウォーミングアップ">ウォーミングアップ</option>
-        <option value="メイン">メイン</option>
-      </select>
+    <h1>水泳メニューを作ってみよう！</h1>
+    <div class="container">
+        <label for="category">練習メニュー</label>
+        <select id="category">
+            <option value="ウォーミングアップ">ウォーミングアップ</option>
+            <option value="メイン">メイン</option>
+        </select>
 
-      <label for="menuName">メニュー名：</label>
-      <input type="text" id="menuName" placeholder="例：50m クロール" />
+        <label for="menyuName">メニュー名:</label>
+        <input type="text" id="menuName" placeholed="例:50mクロール" />
 
-      <label for="menuCount">回数や距離：</label>
-      <input type="text" id="menuCount" placeholder="例：4本、200m など" />
+        <label for="menuCount">回数や距離:</label>
+        <input type="text" id="menuCount" placeholder="例:4本、200mなど" />
 
-      <button onclick="addMenu()">メニューを追加</button>
-      <button class="reset-btn" onclick="resetMenu()">すべてリセット</button>
+        <button onclick="addmenu()">メニューを追加</button>
+        <button class="reset-btn" onclick="resemenu()"すべてリセット</button>
     </div>
-
-    <button>nitani</button>
-    <!-- 右側：メニュー表示 -->
-    <div class="menu-display">
-      <h2>今日の練習メニュー</h2>
-
-      <!-- メニュー一覧(ulタグの中にliタグが追加されていく) -->
-      <ul id="menuList"></ul>
-    </div>
-  </div>
-
-
-  <!-- bodyの一番下でjavascriptのファイルを読み込んでいる -->
-  <script src="index.js"></script>
 </body>
 </html>
