@@ -1,4 +1,11 @@
-/*背景の色*/
+/*背景設定*/
 body{
     background-color:lightblue;
 }
+
+/*h1設定*/
+h1{
+    color: red;
+    text-align: center;
+}
+
