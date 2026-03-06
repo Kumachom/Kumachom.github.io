@@ -5,12 +5,16 @@ function addtext(){
 
     if(select){
         const displayArea = document.getElementById("textList");
-        displayArea.innerHTML += select + "<br>";
+        displayArea.innerHTML += category + ":" + select + "<br>";  //カテゴリを追加
         document.getElementById("select").value = "";
     }
+
+
 }
 
 //リセット関数
 function resettext(){
-    document.getElementById("textList").innerHTML ="";
+    document.getElementById("textList").innerHTML = "";
+    document.getElementById("select").value = "";
+    document.getElementById("category").selectedIndex = 0;
 }
