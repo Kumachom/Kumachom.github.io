@@ -4,8 +4,13 @@ function addtext(){
     const select = document.getElementById("select").value.trim();
 
     if(select){
-        const displayArea = document.getElementById("display-area");
+        const displayArea = document.getElementById("textList");
         displayArea.innerHTML += select + "<br>";
         document.getElementById("select").value = "";
     }
+}
+
+//リセット関数
+function resettext(){
+    document.getElementById("textList").innerHTML ="";
 }
