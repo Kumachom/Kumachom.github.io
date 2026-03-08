@@ -10,22 +10,23 @@
         <h1>HTMLの練習サイト</h1>       <!--タイトル名設定-->
         <div class ="container">        <!--全体のレイアウトを左右に分ける-->
             <div class="form-box">      <!--左側:フォームボックス-->
-                <label for="category">あいうえお</label>
+                <label for="category">言語選択</label>
                 <select id="category">
                     <option value="ひらがな">ひらがな</option>
                     <option value="カタカナ">カタカナ</option>
                 </select>
 
-                <label for="select">言語</label>
-                <input type="text" id="select" placeholder="例:あかさたな" />
+                <label for="inputText">入力</label>
+                <input type="text" id="inputText" placeholder="例:あかさたな" />
 
                 <button onclick="addtext()">文字を追加</button>
-                <button class ="reset-button" onclick="resettext()">リセット</button>
+                <button class = "reset-button" onclick="resettext()">リセット</button>
+                <button class = "delete-button" onclick = "deletetext()">削除</button>
             </div> 
 
-            <div class="display-area" id="textList">
+            <div class="display-area" >
                 <h2>追加テキスト一覧</h2>
-
+                <div id="textList"></div>
             </div>
         </div>
 
