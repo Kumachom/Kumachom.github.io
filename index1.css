@@ -9,15 +9,31 @@ h1{
     text-align: center;
 }
 
+/*h2設定*/
+h2{
+    color: blue;
+    text-align: center;
+}
+
+/*左右レイアウトにする*/
+.container{
+    display: flex;      /*２つの要素を横並びにする*/
+    gap: 20px;      /*要素間のスペースを20pxにする*/
+    flex-wrap: wrap;     /*画面幅が狭くなったときに要素を折り返す*/
+    align-items: flex-start;
+}
 /*リスト設定*/
 .display-area{
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #240808;
-    background-color: #ffffff;
+    background-color: #808080;;
+
+    flex: 1;      /*左右の要素が同じ幅になるようにする*/
+    min-height: 300px;     /*リストの最小高さを300pxにする*/
 }
 
-.textList{
+#textList{
     List-style: none;
     padding-left: 0;
 }
