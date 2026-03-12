@@ -2,7 +2,7 @@
 body{
     background-color:lightblue;
     margin: 0;
-    padding: 20px;
+    padding: 20px;      /*上下左右に20pxの余白を追加*/
 }
 
 /*h1設定*/
@@ -26,11 +26,10 @@ h2{
 }
 /*リスト設定*/
 .display-area{
-    margin-top: 20px;
+    margin-top: 20px;       /*要素間に20pxのスペースを追加*/
     padding: 10px;
     border: 1px solid #240808;
     background-color: #808080;;
-
     flex: 1;      /*左右の要素が同じ幅になるようにする*/
     min-height: 300px;     /*リストの最小高さを300pxにする*/
 }
@@ -42,8 +41,38 @@ h2{
 
 /*フォームボックス設定*/
 .form-box{
+    display: flex;
+    flex-direction: column;     /*フォーム内の要素を縦に並べる*/
+    gap: 10px;      /*フォーム内の要素間のスペースを10pxにする*/
     background: white;
     padding: 20px;
     border-radius: 10px;
     flex: 1;      /*左右の要素が同じ幅になるようにする*/
+}
+
+button{
+    margin-top: 15px;
+    padding: 10px 15px;     /*上下に10px、左右に15pxの余白を追加*/
+}
+
+.add-button{
+    background-color: #0099cc;
+    color: white;
+}
+
+.reset-button{
+    background-color: #04d93c;
+    color: green;
+}
+
+label{
+    display: block;     /*ラベルをブロック要素にする*/
+    margin-top: 10px;       /*ラベルと入力フィールドの間にスペースを追加*/
+}
+
+input, select{
+    width: 100%;      /*入力フィールドとセレクトボックスをフォームの幅いっぱいにする*/
+    padding: 10px;     /*入力フィールドとセレクトボックスに10pxの余白を追加*/
+    margin-top: 5px;       /*入力フィールドとセレクトボックスの上にスペースを追加*/
+    box-sizing: border-box;     /*パディングとボーダーを含めた幅を指定する*/
 }
