@@ -1,6 +1,8 @@
 /*背景設定*/
 body{
     background-color:lightblue;
+    margin: 0;
+    padding: 20px;
 }
 
 /*h1設定*/
@@ -36,4 +38,12 @@ h2{
 #textList{
     List-style: none;
     padding-left: 0;
+}
+
+/*フォームボックス設定*/
+.form-box{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;      /*左右の要素が同じ幅になるようにする*/
 }
