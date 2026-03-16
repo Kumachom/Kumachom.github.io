@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TODOリスト</title>
+    </head>
+
+    <body>
+        <h1>TODOリスト</h1>
+        <div class="container">
+            <div class="form-box">
+                <label for="category">カテゴリ</label>
+                <select id="category">
+                    <option value="大学課題">大学課題</option>
+                    <option value="就活">就活</option>
+                    <option value=""その他">その他</option>
+                </select>
+
+                <label for="date">締切期限</label>
+                <input type="date" id="date">
+
+                <label for="inputtask">入力</label>
+                <input type="text"id="inputtask" placeholder="例：レポート" />
+
+                <button class="add-button" onclick="addtask()">TODO追加</button>
+                <button class="reset-button" onclick="resettask()">TODOリセット</button>
+            </div>
+        </div>
+    </body>
