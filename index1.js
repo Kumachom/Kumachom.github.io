@@ -31,4 +31,3 @@ function deletetext(button){
     const item = button.parentElement;
     item.remove();
 }
-
