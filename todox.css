@@ -1,0 +1,12 @@
+/*背景設定*/
+body{
+    background-color:azure;
+    margin:0;
+    padding:20px;
+}
+
+/*h1設定*/
+h1{
+    color:black;
+    font-family:"Times New Roman",serif;       /*Timis New Roman→第一候補のフォント、serif→第二候補のフォント*/
+}
