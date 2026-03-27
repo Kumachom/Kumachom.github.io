@@ -14,10 +14,24 @@ function addTODO(){
     //新しいリスト要素を作成
     const ListItem=document.createElement("li");
     ListItem.innerHTML=`<span> ${date}| ${category} ${inputTODO}</span>;
-        <button onclick="resetTODO(this)">削除</button>`;
+        <button onclick="deleteTODO(this)">削除</button>`;
     todoList.appendChild(ListItem);
 
     //入力リセット
     document.getElementById("inputTODO").value="";
     document.getElementById("date").value="";
+}
+
+//TODO削除関数
+function resetTODO(){
+    document.getElementById("todoList").innerHTML="";
+    document.getElementById("inputTODO").value="";
+    document.getElementById("date").value="";
+    document.getElementById("category").selectedIndex=0;
+}
+
+//個別TODO削除関数
+function deleteTODO(button){
+    const ListItem=button.parentElement;
+    ListItem.remove();
 }
