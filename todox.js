@@ -13,8 +13,8 @@ function addTODO(){
 
     //新しいリスト要素を作成
     const ListItem=document.createElement("li");
-    ListItem.innerHTML=`<span> ${date}| ${category} ${inputTODO}</span>;
-        <button onclick="deleteTODO(this)">削除</button>`;
+    ListItem.innerHTML=`<span> ${date}| ${category} ${inputTODO}</span>
+        <button class="delete-button" onclick="deleteTODO(this)">削除</button>`;
     todoList.appendChild(ListItem);
 
     //入力リセット

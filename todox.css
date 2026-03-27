@@ -1,6 +1,6 @@
 /*背景設定*/
 body{
-    background-color:azure;
+    background-color:rgb(10, 143, 43);
     margin:0;
     padding:20px;
 }
@@ -9,4 +9,65 @@ body{
 h1{
     color:black;
     font-family:"Times New Roman",serif;       /*Timis New Roman→第一候補のフォント、serif→第二候補のフォント*/
+}
+
+/*h2設定*/
+h2{
+    color:black;
+    font-family:"Times New Roman",serif;
+}
+
+/*左右レイアウト*/
+.container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    align-items:flex-start;
+}
+
+/*リスト設定*/
+.display-area{
+    margin-top:20px;
+    padding:10px;
+    border:5px solid black;
+    background-color:rgb(117, 15, 200);
+    flex:1;
+    min-height:300px;
+}
+
+#todoList{
+    List-style:none;
+    padding-left:0;
+}
+
+/*フォームボックス設定*/
+.form-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;   /*フォーム内の要素を2列にする*/
+    gap:5px;
+    background:rgb(114, 9, 54);
+    padding:20px;
+}
+
+/*追加ボタン設定*/
+.add-button{
+    margin-top:20px;
+    padding:10px 15px;
+    background-color:blue;
+    color:green;
+}
+
+/*リセットボタン設定*/
+.reset-button{
+    margin-top:20px;
+    padding:10px 15px;
+    background-color:red;
+    color:yellow;
+}
+
+/*削除ボタン設定*/
+.delete-button{
+    margin-top:20px;
+    padding:5px 10px;
+    background-color:rgb(1,100,200);
 }
