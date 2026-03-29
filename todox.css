@@ -44,7 +44,7 @@ h2{
 .form-box{
     display:grid;
     grid-template-columns:1fr 1fr;   /*フォーム内の要素を2列にする*/
-    gap:5px;
+    gap:10px;
     background:rgb(114, 9, 54);
     padding:20px;
 }
